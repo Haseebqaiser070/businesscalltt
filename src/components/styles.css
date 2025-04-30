@@ -1,0 +1,239 @@
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+/* General Page Styles */
+body {
+  background-color: #f4f6f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.container-fluid {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-outline input,
+.form-outline select,
+.form-outline textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+.text-success {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 280px;
+  background-color: #CE1127;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height of the page */
+  z-index: 999; /* Keeps the sidebar above the content */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Allows scrolling if content overflows */
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin: 15px 0;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-link:hover {
+  color: #000;
+}
+
+.sidebar-link svg {
+  margin-right: 10px;
+}
+
+/* Content Area Styles */
+.main-layout {
+  display: flex;
+  min-height: 100vh; /* Ensures the layout takes full height */
+}
+
+.content-area {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f8f9fa;
+  margin-left: 280px; /* Ensures the content starts after the sidebar */
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  /* Adjust the sidebar for smaller screens */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .content-area {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Dashboard Title */
+  .dashboard-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Card Styles */
+  .dashboard-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Card Icon Styling */
+  .card-icon {
+    font-size: 50px;
+    color: #CE1127;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Count Styling */
+  .card-count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .dashboard-card {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .download{
+    height: 100%;
+  background-color: #CE1127;
+  padding: 45px;
+  border-radius: 10px;
+  color: #fff;
+
+  }
+
+  .dashboard-row {
+    display: flex;
+    align-items: stretch; /* Ensure columns stretch to the same height */
+  }
+  
+  .dashboard-col-left, .dashboard-col-right {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensures the column fills its container */
+  }
+  
+  .dashboard-col-left .d-flex, .dashboard-col-right .d-flex {
+    flex-grow: 1; /* Makes sure the content stretches to fill the column */
+  }
+  
+  .dashboard-col-left, .dashboard-col-right {
+    min-height: 350px; /* You can adjust the value as needed */
+  }
+  .dashboard-col-right .d-flex img {
+    max-width: 170px; /* Set a max width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure images fit inside their container */
+  }
+  
+  /* Add this to your CSS file */
+.phone-input {
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
+.phone-input:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Adjust the dropdown styling */
+.react-phone-number-input__country {
+  padding-right: 0.5rem;
+}
+    
